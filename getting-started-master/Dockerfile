@@ -34,6 +34,7 @@ FROM base AS build
 COPY . .
 RUN mkdocs build
 
+
 # Extract the static content from the build
 # and use a nginx image to serve the content
 FROM nginx:alpine
